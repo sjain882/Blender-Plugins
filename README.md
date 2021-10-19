@@ -15,3 +15,11 @@ This can be a timesaver when animating things in OMSI 2, e.g., you can simply cr
 I'm aware you can sort of do similar by merging the objects with CTRL + J, but that can be destructive for object names (and modifiers I've read, but not tested). Plus this is quicker.
 
 To use it, select the objects you would like to copy the local axes to, then select the source object last, so it is the active object. Then either access Copy local axes orientation from the space action menu or use the keyboard shortcut.
+
+***
+
+### `io_import_multiple_objs_filename.py`
+
+**Import multiple Wavefront (.obj) meshes in batch**
+
+Original script by poor. Modified by [BlueOrange](https://github.com/BlueOrange) to retain filenames (as object names) and by me to shade all mesh UV's smooth after import.
