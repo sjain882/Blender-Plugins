@@ -22,4 +22,4 @@ To use it, select the objects you would like to copy the local axes to, then sel
 
 **Import multiple Wavefront (.obj) meshes in batch**
 
-Original script by poor. Modified by [BlueOrange](https://github.com/BlueOrange) to retain filenames (as object names) and by me to shade all mesh UV's smooth after import.
+Original script by poor. Modified by [BlueOrange](https://github.com/BlueOrange775) to retain filenames (as object names) and by me to shade all mesh UV's smooth after import.
