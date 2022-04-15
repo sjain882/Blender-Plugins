@@ -1,10 +1,10 @@
 # Blender-Plugins
 
-Assorted Blender plugins for different versions.
+Assorted Blender plugins for different versions. For archival purposes only.
 
 ***
 
-### `local_axes_orientation_copy_updated.py`:
+### `2.79\local_axes_orientation_copy_updated.py`:
 
 **Copy local axes orientation between objects - Blender 2.79**
 
@@ -14,11 +14,11 @@ This can be a timesaver when animating things in OMSI 2, e.g., you can simply cr
 
 I'm aware you can sort of do similar by merging the objects with CTRL + J, but that can be destructive for object names (and modifiers I've read, but not tested). Plus this is quicker.
 
-To use it, select the objects you would like to copy the local axes to, then select the source object last, so it is the active object. Then either access Copy local axes orientation from the space action menu or use the keyboard shortcut.
+To use it, select the objects you would like to copy the local axes to, then select the source object last, so it is the active object. Then either access "Copy local axes orientation" from the spacebar action menu or use the keyboard shortcut.
 
 ***
 
-### `local_axes_orientation_copy_updated_28x.py`:
+### `2.80+\local_axes_orientation_copy_updated_28x.py`:
 
 **Copy local axes orientation between objects - Blender 2.80+**
 
@@ -30,8 +30,27 @@ The entire code was just copy pasted into the same plugin format as above for so
 
 ***
 
-### `io_import_multiple_objs_filename.py`
+### `2.79\io_import_multiple_objs_filename.py`
 
 **Import multiple Wavefront (.obj) meshes in batch - Blender 2.79**
 
 Original script by poor. Modified by [BlueOrange](https://github.com/BlueOrange775) to retain filenames (as object names) and by me to shade all mesh UV's smooth after import.
+
+***
+
+### `2.80+\io_batch_import_objs_2.93_retainsFilename.py`
+
+**Import multiple Wavefront (.obj) meshes in batch - Blender 2.92 - 3.0.1 (only)**
+
+Original script by p2or, I've just ported [BlueOrange](https://github.com/BlueOrange775)'s method to retain filenames (as object names) after import.
+
+[Original code source](https://blender.stackexchange.com/questions/5064/how-to-batch-import-wavefront-obj-files/31825#31825) - credit: p2or. Version for 2.80+ is available there.
+
+***
+
+### `2.80+\refresh_materials_27x_to_28x_above.py`
+
+Created by me - for all selected objects, deletes their materials and adds a new blank Principled BSDF nodes material. Can be needed to fix some material things when copying models from Blender 27x sessions to 28x sessions.
+
+Select the objects you wish to apply this action to then access "Refresh materials" from the spacebar action menu to use it.
+
