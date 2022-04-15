@@ -52,5 +52,7 @@ Original script by p2or, I've just ported [BlueOrange](https://github.com/BlueOr
 
 Created by me - for all selected objects, deletes their materials and adds a new blank Principled BSDF nodes material. Can be needed to fix some material things when copying models from Blender 27x sessions to 28x sessions.
 
+WARNING: Mostly intended for fresh blends where you copy a set of models freshly imported from a 2.7x blend to a 2.8x blend. This purges all orphaned data blocks and can be destructive.
+
 Select the objects you wish to apply this action to then access "Refresh materials" from the spacebar action menu to use it.
 
