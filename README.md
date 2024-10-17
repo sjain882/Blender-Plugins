@@ -56,3 +56,182 @@ WARNING: Mostly intended for fresh blends where you copy a set of models freshly
 
 Select the objects you wish to apply this action to then access "Refresh materials" from the spacebar action menu to use it.
 
+***
+***
+***
+
+# OMSI 2 - Useful Blender Plugins
+
+### `2.79`
+
+
+
+**Blender-O3D-IO-Public**
+
+• https://github.com/space928/Blender-O3D-IO-Public
+
+• Imports entire vehicles & sceneryobjects in one go - models, materials & various features like interior lights and exports individual O3D models
+
+
+
+**O3D Model Exporter (MichauSto)**
+
+• https://strefa-omsi.pl/Watek-OMSI-1-2-Eksporter-plikow-o3d-blender-2-79-2-80-3-0--27096
+
+• Exports o3d model files with options to specify material texture, specular strength, etc...
+
+
+
+**Modify Pivot**
+
+• https://github.com/Anonim17PL/modify_pivot
+
+• Easily adjust local axes / transformation orientation / model animation (feature included in Blender 2.8+)
+
+
+
+**Configuration file exporter**
+
+• Download: https://forum.omnibussimulator.de/forum/index.php?thread/29488-blender-addon-omsi-konfigurationsdateien-exporter-v1-2-neu-passengercabinexporte/
+
+• Tutorial: https://www.youtube.com/watch?v=LN1u5uJMy-I
+
+• Dummy models pack: https://cdn.discordapp.com/attachments/491327427314712577/898959187126669402/OMSI_Passengercabin__Paths_Configuration.7z
+
+• Dummy models pack original source: https://discord.com/channels/563856915981926411/764884741144838225/887034889545875497
+
+
+
+**DirectX (`*.x`) Model Importer**
+
+• https://github.com/spamandeggs/directX_blender
+
+
+
+**DirectX (`*.x`) Model Exporter**
+
+• https://github.com/cdbfoster/io_scene_x
+
+
+
+**Misc. plugins**
+
+• https://github.com/sjain882/Blender-Plugins/tree/main/2.79
+
+• 1. Import multiple Wavefront .obj model files and retain their filenames (useful for 3D Object Converter batch o3d -> obj)
+
+• 2. Copy local axes / transformation orientation / model animation between multiple objects easily
+
+• Documentation: https://github.com/sjain882/Blender-Plugins
+
+
+
+***
+
+
+
+### `2.80+`
+
+
+
+**Blender-O3D-IO-Public**
+
+• https://github.com/space928/Blender-O3D-IO-Public
+
+• Imports entire vehicles & sceneryobjects in one go - models, materials & various features like interior lights and exports individual O3D models
+
+
+
+**O3D Model Exporter (MichauSto)**
+
+• https://strefa-omsi.pl/Watek-OMSI-1-2-Eksporter-plikow-o3d-blender-2-79-2-80-3-0--27096
+
+• Exports o3d model files with options to specify material texture, specular strength, etc...
+
+
+
+**O3D Model Exporter (Road-Hog123)**
+
+• https://github.com/Road-hog123/Blender-OMSI-Exporter
+
+• Exports o3d model files with advanced support for Blender Cycles materials
+
+
+
+**Configuration file exporter**
+
+• https://strefa-omsi.pl/Watek-OMSI-2-Automatyczny-generator-pojazdow-i-obiektow-scenerii-blender-2-8--27135
+
+• Automatically generate various fragments of model & sceneryobject configuration files, **including AI paths (partial replacement of OMSI Crossing Editor)**
+
+
+
+**DirectX (`*.x`) Model Importer**
+
+• https://github.com/oguna/Blender-XFileImporter
+
+• https://github.com/poikilos/io_import_x (Blender 2.80)
+
+
+
+**DirectX (`*.x`) Model Exporter**
+
+• https://github.com/DodgeeSoftware/io_scene_directx (Blender 2.8+)
+
+• https://github.com/Anonim17PL/io_scene_x (Blender 2.83)
+
+• https://github.com/arite/io_scene_x (Blender 2.9+)
+
+
+
+**Misc Plugins**
+
+• https://github.com/sjain882/Blender-Plugins/tree/main/2.80%2B
+
+• 1. Import multiple Wavefront .obj model files and retain their filenames (useful for 3D Object Converter batch o3d -> obj)
+
+• 2. Copy local axes / transformation orientation / model animation between multiple objects easily
+
+• 3. Replace all materials on all objects with new blank Principled BSDF materials (for 2.8+ --> 2.79 or GPU dumping)
+
+• Documentation: https://github.com/sjain882/Blender-Plugins
+
+
+
+***
+
+
+
+### **Decrypt base game OMSI models for importing**
+
+*only applies to base game content e.g, MAN SD202 - not DLC buses*
+
+• https://github.com/CrIcKeT98/OMSI_Decoder
+
+
+
+***
+
+
+
+### **Convert Blender 2.79 blend file to Blender 2.8+**
+
+
+
+• <https://gist.github.com/nebadon2025/8266e6dd8cec22d098011231eff15461>
+
+1. Download this file to `C:\Program Files\Blender Foundation\Blender\2.79\scripts\addons`
+
+2. Enable plugin in preferences
+
+3. Backup blend file, then open blend in 2.79
+
+4. Select any object > Go to materials tab on the right > Scroll to bottom > Click on `BLENDER &gt; CYCLES`
+
+5. It will convert all the materials in the blend (not just this one), be patient if its slow
+
+6. Switch render to `Blender Cycles` from `Blender Render` at the top
+
+7. Save blend
+
+8. Open blend in Blender 2.8+
